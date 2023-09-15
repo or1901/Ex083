@@ -41,7 +41,7 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="6"
+        android:layout_weight="7"
         android:orientation="vertical">
 
         <Space
@@ -61,6 +61,7 @@
             android:layout_weight="6" />
 
         <TextView
+            android:id="@+id/capitalTv"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
@@ -72,6 +73,7 @@
             android:layout_weight="1" />
 
         <TextView
+            android:id="@+id/peopleTv"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
@@ -83,6 +85,7 @@
             android:layout_weight="1" />
 
         <TextView
+            android:id="@+id/langTv"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
@@ -94,6 +97,7 @@
             android:layout_weight="1" />
 
         <TextView
+            android:id="@+id/hymnTv"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
