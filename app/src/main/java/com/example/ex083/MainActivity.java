@@ -30,48 +30,54 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             {"Australia", "New Zealand", "Fiji", "Vanuatu", "Samoa", "Tonga", "Kiribati"}
     };
     String[][][] countriesData = {
-            {{"Abuja", "223.8 million", "English", "Arise, O Compatriots"},
-             {"Addis Ababa", "126.5 million", "Amharic", "March Forward, Dear Mother Ethiopia"},
-             {"Cairo", "112.7 million", "Arabic", "Bilady, Bilady, Bilady"},
-             {"Pretoria", "60.4 million", "Zulu", "Nkosi Sikelel' iAfrika"},
-             {"Nairobi", "55.1 million", "Swahili", "Ee Mungu Nguvu Yetu"},
-             {"Algiers", "45.6 million", "Arabic", "Kassaman"},
-             {"Rabat", "37.8 million", "Arabic", "Cherifian Anthem"}},
-            {{"Jerusalem", "9.1 million", "Hebrew", "Hatikvah"},
-             {"New Delhi", "1.42 billion", "Hindi", "Jana Gana Mana"},
-             {"Beijing", "1.42 billion", "Chinese", "March of the Volunteers"},
-             {"Tokyo", "123.2 million", "Japanese", "Kimigayo"},
-             {"Bangkok", "71.8 million", "Thai", "Phleng Chat Thai"},
-             {"Ankara", "85.8 million", "Turkish", "İstiklal Marşı"},
-             {"Hanoi", "98.8 million", "Vietnamese", "Tiến Quân Ca"}},
-            {{"Moscow", "144.4 million", "Russian", "Gosudarstvennyy Gimn Rossiyskoy Federatsii"},
-             {"Berlin", "83.2 million", "German", "Deutschlandlied"},
-             {"London", "67.7 million", "English", "God Save the King"},
-             {"Paris", "64.7 million", "French", "La Marseillaise"},
-             {"Rome", "58.8 million", "Italian", "Il Canto degli Italiani"},
-             {"Madrid", "47.5 million", "Spanish", "Marcha Real"},
-             {"Amsterdam", "17.6 million", "Dutch", "Wilhelmus"}},
-            {{"Washington", "339.9 million", "English", "The Star-Spangled Banner"},
-             {"Mexico City", "128.4 million", "Spanish", "Himno Nacional Mexicano"},
-             {"Ottawa", "38.7 million", "English", "O Canada"},
-             {"Guatemala City", "18.09 million", "Spanish", "Himno Nacional de Guatemala"},
-             {"Port-au-Prince", "11.7 million", "Haitian Creole", "La Dessalinienne"},
-             {"Havana", "11.1 million", "Spanish", "La Bayamesa"},
-             {"Tegucigalpa", "10.5 million", "Spanish", "Himno Nacional de Honduras"}},
-            {{"Brasilia", "216.4 million", "Portuguese", "Hino Nacional Brasileiro"},
-             {"Bogota", "52.08 million", "Spanish", "Himno Nacional de la República de Colombia"},
-             {"Buenos Aires", "45.7 million", "Spanish", "Himno Nacional Argentino"},
-             {"Lima", "34.3 million", "Spanish", "Himno Nacional del Perú"},
-             {"Santiago", "19.6 million", "Spanish", "Himno Nacional de Chile"},
-             {"Quito", "18.1 million", "Spanish", "Salve, Oh Patria"},
-             {"La Paz", "12.3 million", "Spanish", "Bolivianos, el Hado Propicio"}},
-            {{"Canberra", "26.4 million", "English", "Advance Australia Fair"},
-             {"Wellington", "5.2 million", "English", "God Defend New Zealand"},
-             {"Suva", "936.3 thousand", "Fijian", "Meda dau doka"},
-             {"Port Vila", "334.5 thousand", "Bislama", "Yumi, Yumi, Yumi"},
-             {"Apia", "225.6 thousand", "Samoan", "Samoa Tula'i"},
-             {"Nukuʻalofa", "107.7 thousand", "Tongan", "Ko e fasi ʻo e tuʻi ʻo e ʻOtu Tonga"},
-             {"Tarawa", "133.5 thousand", "Gilbertese", "Kunan Kiribati"}}
+            {{"Abuja", "223,804,632", "English", "Arise, O Compatriots"},
+             {"Addis Ababa", "126,527,060", "Amharic", "March Forward, Dear Mother Ethiopia"},
+             {"Cairo", "112,716,598", "Arabic", "Bilady, Bilady, Bilady"},
+             {"Pretoria", "60,414,495", "Zulu", "Nkosi Sikelel' iAfrika"},
+             {"Nairobi", "55,100,586", "Swahili", "Ee Mungu Nguvu Yetu"},
+             {"Algiers", "45,606,480", "Arabic", "Kassaman"},
+             {"Rabat", "37,840,044", "Arabic", "Cherifian Anthem"}
+            },
+            {{"Jerusalem", "9,174,520", "Hebrew", "Hatikvah"},
+             {"New Delhi", "1,428,627,663", "Hindi", "Jana Gana Mana"},
+             {"Beijing", "1,425,671,352", "Chinese", "March of the Volunteers"},
+             {"Tokyo", "123,294,513", "Japanese", "Kimigayo"},
+             {"Bangkok", "71,801,279", "Thai", "Phleng Chat Thai"},
+             {"Ankara", "85,816,199", "Turkish", "İstiklal Marşı"},
+             {"Hanoi", "98,858,950", "Vietnamese", "Tiến Quân Ca"}
+            },
+            {{"Moscow", "144,444,359", "Russian", "Gosudarstvennyy Gimn Rossiyskoy Federatsii"},
+             {"Berlin", "83,294,633", "German", "Deutschlandlied"},
+             {"London", "67,736,802", "English", "God Save the King"},
+             {"Paris", "64,756,584", "French", "La Marseillaise"},
+             {"Rome", "58,870,762", "Italian", "Il Canto degli Italiani"},
+             {"Madrid", "47,519,628", "Spanish", "Marcha Real"},
+             {"Amsterdam", "17,618,299", "Dutch", "Wilhelmus"}
+            },
+            {{"Washington", "339,996,563", "English", "The Star-Spangled Banner"},
+             {"Mexico City", "128,455,567", "Spanish", "Himno Nacional Mexicano"},
+             {"Ottawa", "38,781,291", "English", "O Canada"},
+             {"Guatemala City", "18,092,026", "Spanish", "Himno Nacional de Guatemala"},
+             {"Port-au-Prince", "11,724,763", "Haitian Creole", "La Dessalinienne"},
+             {"Havana", "11,194,449", "Spanish", "La Bayamesa"},
+             {"Tegucigalpa", "10,593,798", "Spanish", "Himno Nacional de Honduras"}
+            },
+            {{"Brasilia", "216,422,446", "Portuguese", "Hino Nacional Brasileiro"},
+             {"Bogota", "52,085,168", "Spanish", "Himno Nacional de la República de Colombia"},
+             {"Buenos Aires", "45,773,884", "Spanish", "Himno Nacional Argentino"},
+             {"Lima", "34,352,719", "Spanish", "Himno Nacional del Perú"},
+             {"Santiago", "19,629,590", "Spanish", "Himno Nacional de Chile"},
+             {"Quito", "18,190,484", "Spanish", "Salve, Oh Patria"},
+             {"La Paz", "12,388,571", "Spanish", "Bolivianos, el Hado Propicio"}
+            },
+            {{"Canberra", "26,439,111", "English", "Advance Australia Fair"},
+             {"Wellington", "5,228,100", "English", "God Defend New Zealand"},
+             {"Suva", "936,375", "Fijian", "Meda dau doka"},
+             {"Port Vila", "334,506", "Bislama", "Yumi, Yumi, Yumi"},
+             {"Apia", "225,681", "Samoan", "Samoa Tula'i"},
+             {"Nukuʻalofa", "107,773", "Tongan", "Ko e fasi ʻo e tuʻi ʻo e ʻOtu Tonga"},
+             {"Tarawa", "133,515", "Gilbertese", "Kunan Kiribati"}
+            }
     };
     Spinner spinner;
     ListView lv;
@@ -85,6 +91,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Connects each object to the xml component
         spinner = (Spinner) findViewById(R.id.spinner);
         lv = (ListView) findViewById(R.id.lv);
         capitalTv = (TextView) findViewById(R.id.capitalTv);
@@ -96,11 +103,21 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, continents);
 
         spinner.setAdapter(spinnerAdp);
-        spinner.setOnItemSelectedListener(this);
 
+        spinner.setOnItemSelectedListener(this);
         lv.setOnItemClickListener(this);
     }
 
+    /**
+     * This function presents the countries of the chosen continent from the spinner in the
+     * listView.
+     * <p>
+     *
+     * @param parent The AdapterView where the selection happened.
+     * @param view The view within the AdapterView that was clicked.
+     * @param position The position of the view in the adapter.
+     * @param id The row id of the item that is selected.
+     */
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         lvAdp = new ArrayAdapter<String>(this,
@@ -116,6 +133,16 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     }
 
+    /**
+     * This function presents the data of the selected country from the listView in the text views.
+     * <p>
+     *
+     * @param parent The AdapterView where the click happened.
+     * @param view The view within the AdapterView that was clicked (this
+     *            will be a view provided by the adapter)
+     * @param position The position of the view in the adapter.
+     * @param id The row id of the item that was clicked.
+     */
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         capitalTv.setText(countriesData[currentContinentId][position][0]);
