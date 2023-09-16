@@ -55,7 +55,21 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
              {"Guatemala City", "18.09 million", "Spanish", "Himno Nacional de Guatemala"},
              {"Port-au-Prince", "11.7 million", "Haitian Creole", "La Dessalinienne"},
              {"Havana", "11.1 million", "Spanish", "La Bayamesa"},
-             {"Tegucigalpa", "10.5 million", "Spanish", "Himno Nacional de Honduras"}}
+             {"Tegucigalpa", "10.5 million", "Spanish", "Himno Nacional de Honduras"}},
+            {{"Brasilia", "216.4 million", "Portuguese", "Hino Nacional Brasileiro"},
+             {"Bogota", "52.08 million", "Spanish", "Himno Nacional de la República de Colombia"},
+             {"Buenos Aires", "45.7 million", "Spanish", "Himno Nacional Argentino"},
+             {"Lima", "34.3 million", "Spanish", "Himno Nacional del Perú"},
+             {"Santiago", "19.6 million", "Spanish", "Himno Nacional de Chile"},
+             {"Quito", "18.1 million", "Spanish", "Salve, Oh Patria"},
+             {"La Paz", "12.3 million", "Spanish", "Bolivianos, el Hado Propicio"}},
+            {{"Canberra", "26.4 million", "English", "Advance Australia Fair"},
+             {"Wellington", "5.2 million", "English", "God Defend New Zealand"},
+             {"Suva", "936.3 thousand", "Fijian", "Meda dau doka"},
+             {"Port Vila", "334.5 thousand", "Bislama", "Yumi, Yumi, Yumi"},
+             {"Apia", "225.6 thousand", "Samoan", "Samoa Tula'i"},
+             {"Nukuʻalofa", "107.7 thousand", "Tongan", "Ko e fasi ʻo e tuʻi ʻo e ʻOtu Tonga"},
+             {"Tarawa", "133.5 thousand", "Gilbertese", "Kunan Kiribati"}}
     };
     Spinner spinner;
     ListView lv;
