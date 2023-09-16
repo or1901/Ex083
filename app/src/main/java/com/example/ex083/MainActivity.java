@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 /**
  * @author    Ori Roitzaid <or1901 @ bs.amalnet.k12.il>
@@ -16,7 +17,8 @@ import android.widget.Spinner;
  * An activity of geographic - 7 countries in each one of the continents are displayed,
  * and may used to get information about each of these countries.
  */
-public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener,
+        AdapterView.OnItemClickListener{
     String[] continents =
             {"Africa", "Asia", "Europe", "North America", "South America", "Australia"};
     String[][] countries = {
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             {"Brazil", "Colombia", "Argentina", "Peru", "Chile", "Ecuador", "Bolivia"},
             {"Australia", "New Zealand", "Fiji", "Vanuatu", "Samoa", "Tonga", "Kiribati"}
     };
-    String[][][] countriesInfo = {
+    String[][][] countriesData = {
             {{"Abuja", "223.8 million", "English", "Arise, O Compatriots"},
              {"Addis Ababa", "126.5 million", "Amharic", "March Forward, Dear Mother Ethiopia"},
              {"Cairo", "112.7 million", "Arabic", "Bilady, Bilady, Bilady"},
@@ -75,6 +77,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     ListView lv;
     ArrayAdapter<String> spinnerAdp;
     ArrayAdapter<String> lvAdp;
+    TextView capitalTv, peopleTv, langTv, hymnTv;
+    int currentContinentId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,12 +87,18 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         spinner = (Spinner) findViewById(R.id.spinner);
         lv = (ListView) findViewById(R.id.lv);
+        capitalTv = (TextView) findViewById(R.id.capitalTv);
+        peopleTv = (TextView) findViewById(R.id.peopleTv);
+        langTv = (TextView) findViewById(R.id.langTv);
+        hymnTv = (TextView) findViewById(R.id.hymnTv);
 
         spinnerAdp = new ArrayAdapter<String>(this,
                 androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, continents);
 
         spinner.setAdapter(spinnerAdp);
         spinner.setOnItemSelectedListener(this);
+
+        lv.setOnItemClickListener(this);
     }
 
     @Override
@@ -97,10 +107,20 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,
                 countries[position]);
         lv.setAdapter(lvAdp);
+
+        currentContinentId = position;
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        capitalTv.setText(countriesData[currentContinentId][position][0]);
+        peopleTv.setText(countriesData[currentContinentId][position][1] + " people");
+        langTv.setText(countriesData[currentContinentId][position][2]);
+        hymnTv.setText(countriesData[currentContinentId][position][3]);
     }
 }

@@ -62,35 +62,62 @@
             android:layout_weight="6" />
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Capital"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:id="@+id/capitalTv"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:text="TextView" />
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="18sp" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Population"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/peopleTv"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:text="TextView" />
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="18sp" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Language"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/langTv"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:text="TextView" />
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="18sp" />
 
         <Space
             android:layout_width="match_parent"
@@ -98,11 +125,20 @@
             android:layout_weight="1" />
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Anthem"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:id="@+id/hymnTv"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:text="TextView" />
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="18sp" />
 
         <Space
             android:layout_width="match_parent"
