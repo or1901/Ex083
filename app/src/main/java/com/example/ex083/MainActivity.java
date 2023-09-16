@@ -40,9 +40,22 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
              {"Beijing", "1.42 billion", "Chinese", "March of the Volunteers"},
              {"Tokyo", "123.2 million", "Japanese", "Kimigayo"},
              {"Bangkok", "71.8 million", "Thai", "Phleng Chat Thai"},
-             {"Ankara", "85.8 million", "Turkish", "Independence March"},
+             {"Ankara", "85.8 million", "Turkish", "İstiklal Marşı"},
              {"Hanoi", "98.8 million", "Vietnamese", "Tiến Quân Ca"}},
-            {}
+            {{"Moscow", "144.4 million", "Russian", "Gosudarstvennyy Gimn Rossiyskoy Federatsii"},
+             {"Berlin", "83.2 million", "German", "Deutschlandlied"},
+             {"London", "67.7 million", "English", "God Save the King"},
+             {"Paris", "64.7 million", "French", "La Marseillaise"},
+             {"Rome", "58.8 million", "Italian", "Il Canto degli Italiani"},
+             {"Madrid", "47.5 million", "Spanish", "Marcha Real"},
+             {"Amsterdam", "17.6 million", "Dutch", "Wilhelmus"}},
+            {{"Washington", "339.9 million", "English", "The Star-Spangled Banner"},
+             {"Mexico City", "128.4 million", "Spanish", "Himno Nacional Mexicano"},
+             {"Ottawa", "38.7 million", "English", "O Canada"},
+             {"Guatemala City", "18.09 million", "Spanish", "Himno Nacional de Guatemala"},
+             {"Port-au-Prince", "11.7 million", "Haitian Creole", "La Dessalinienne"},
+             {"Havana", "11.1 million", "Spanish", "La Bayamesa"},
+             {"Tegucigalpa", "10.5 million", "Spanish", "Himno Nacional de Honduras"}}
     };
     Spinner spinner;
     ListView lv;
